@@ -1,0 +1,62 @@
+<meta charset="UTF-8">
+
+<h1>juego</h1>
+
+
+<script>
+function saltarLinea(){
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+    }
+
+
+    function imprimir(frase){
+        document.write(frase);
+        saltarLinea();
+    }
+var numeroPensado = Math.round( Math.random()*10)
+var numeroLanzado = parseInt(prompt("Ingrese un numero entre 0-10"))
+
+if (numeroPensado == numeroLanzado){
+    imprimir("usted acerto")
+
+
+
+
+}
+else{
+    imprimir("usted erro, el numero pensado era " + numeroPensado)
+}
+
+
+
+
+</script>
+<h1>programa tieneLicencia</h1>
+<script>
+
+
+
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var edad = parseInt(prompt("¿Cuál es tu edad?"));
+    var tieneLicencia = prompt("¿Tienes licencia? Responde S o N");
+
+    if (edad >18 && tieneLicencia =="S"){
+
+        imprimir("puedes conducir")
+    }
+    else{
+        imprimir("no puedes conducir")
+    }
+
+
+</script>

@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<script>
+function saltarlinea(){
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>")
+}
+function imprimir(frase){
+    document.write(frase); 
+    saltarlinea();
+}
+
+function calcularIMC(peso,altura, nombre){
+    imc = peso / ( altura * altura)
+    imprimir("El imc calculado de: "+nombre +" "+ imc);
+}
+
+
+ 
+
+
+calcularIMC(71, 1.72, "cristian")
+
+
+</script>

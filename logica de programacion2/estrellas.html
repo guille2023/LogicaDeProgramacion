@@ -1,0 +1,52 @@
+<meta charset="UTF-8">
+
+<h1>Estrella</h1>
+
+
+<script>
+    function saltarLinea(){
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase){
+        document.write(frase);
+        saltarLinea();
+    }
+
+    for (var lineas =1; lineas <= 3; lineas++){
+
+        for(var columnas = 1; columnas <= 10; columnas++){
+            document.write("*");
+        }
+        saltarLinea();
+        }
+saltarLinea();
+saltarLinea();
+imprimir("FIN");
+
+</script>
+<h1>Contraseñas</h1>
+<script>
+
+    var inicioDeSesionRegistrado = "alura";
+    var contrasenhaRegistrada = "alura321";
+    var contador = 1;
+
+    
+    while (contador <=3){
+        var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+        var contrasenhaIngresada = prompt("Ingrese su contraseña");
+
+
+
+        if( inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada ) {
+        alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+        break;
+        } else {
+        alert("inicio de sesión inválido. Favor intente de nuevo");
+        }
+        contador++;
+    }
+</script>1
